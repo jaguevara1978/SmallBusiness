@@ -1,0 +1,66 @@
+<?php
+/* 
+Small business administrator
+Copyright (C) 2013 JULIO ALEXANDER GUEVARA MARULANDA
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* @var $this ClientInvoiceController */
+/* @var $model ClientInvoice */ 
+/* @var $css */
+if(!$print) Utilities::showHideLink('ClientInvoice',Yii::t('app',  'general.label.ClientInvoice'),Yii::app()->params['General_DefaultShowHeaders']);
+if(!$css) 
+	if (!$print) 
+		$css=Utilities::getCustomCSSPath();
+	else
+		$css=Utilities::getPrintCSS('ClientInvoice');
+
+$totals=$model->totalProvider();
+$clientName=$model->client0->name;
+if($model->client0->phone) $clientName.=' - '.Yii::t('app','model.Client.Phone').': '.$model->client0->phone;
+if($model->client0->mobile) $clientName.=' - '.Yii::t('app','model.Client.Mobile').': '.$model->client0->mobile;
+?>
+<div class="page-header">
+  <h4>LA CASA DEL VIDEO GAME <small>Factura No.<span class="badge"><?php echo $model->id ?></span></small></h4>
+  <h6>Tel.: 511 76 72</h6>
+  <h6>Medellín - Colombia</h6>
+</div>
+
+<?php
+$this->widget('zii.widgets.CDetailView', array(
+	'id'=>'ClientInvoice',
+	'data'=>$model,
+	'cssFile'=>$css,
+	'htmlOptions'=>array(
+		'class'=>'editableDetail table table-bordered table-striped table-hover',
+		'style'=>Yii::app()->params['General_DefaultShowHeaders'] || $print ?'':'display:none;'
+	),
+	'nullDisplay'=>'',
+	'attributes'=>array(
+		array('name'=>'Factura','value'=>$model->id),
+		array('name'=>'client','value'=>$clientName),
+		array('name'=>'','value'=>'Medellín - Antioquia'),
+		'date',
+// 		array('name'=>'status0.name',),
+// 		'payment_date',
+// 		'notes',
+// 		array(
+// 			'name'=>Yii::t('app','general.label.totals'),
+// 			'value'=>Yii::t('app','model.ClientInvoice.totalValue').': '.$totals->sumTotalValue
+// 					.' - '.Yii::t('app','model.ClientInvoice.totalDeposits').': '.$totals->sumTotalDeposits
+// 					.' - '.Yii::t('app','model.ClientInvoice.totalPending').': '.$totals->sumTotalPending,
+// 		),
+	),
+));
+?>

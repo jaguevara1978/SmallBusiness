@@ -1,0 +1,75 @@
+table.print thead th {
+	color: #000;
+	background: #FFF;
+	line-height:1px;
+}
+table.print thead tr {
+	border-top:2px solid #dddddd;
+	border-bottom:2px solid #dddddd;
+}
+table.print tfoot {
+	font-style:italic;
+	font-weight: bold;
+	color: #000;
+	background: #FFF;
+}
+table.print tfoot tr {
+	border-top:2px solid #dddddd;
+	border-bottom:2px solid #dddddd;
+}
+table.print tfoot td {
+	text-align:right;
+	line-height:18px;
+	padding: 0px 10px 0px 5px;
+}
+table.print tbody tr {
+	font-size: 12px;
+  	line-height:18px;
+}
+table.print tbody td {
+	line-height: 0px;
+	border-top: 1px solid #FFF;
+}
+
+h3 {
+	line-height: 10px;
+}
+.grid-view {
+	padding-top: 0px;
+}
+
+table.detail-view
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0;
+}
+
+.detail-view th {
+  text-align:left;
+  width:80px;
+  line-height:8px;
+  padding: 0px 10px 0px 5px;
+}
+.detail-view tr {
+  line-height:1px;
+}
+.detail-view th td {
+  padding:0px;
+}
+
+.editableDetail th{
+	text-align: left;
+	width: 200px;
+	border-top: 1px solid #dddddd;
+	padding: 0px 0px 0px 5px;
+}
+
+.icon-stockIn {
+	url: ../images/Show.png;
+}
+
+.editableDetail td {
+	padding: 0px 0px 0px 5px;
+}

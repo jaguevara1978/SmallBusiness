@@ -1,0 +1,79 @@
+/**
+ */
+
+.img_link{
+    text-decoration:none;
+    border:none;
+    text-align:center;
+}
+
+@media print {
+	.grid-view {
+		border-collapse: collapse;
+	    border-spacing: 0px;
+	    width: 100%
+	}
+
+	.grid-view th,.grid-view td {
+	    border:0px;
+	    padding: 0.3em 0.6em;
+	    vertical-align: top;
+	}
+
+	.grid-view th {
+	    text-align: right;
+	    /*width: 160px;*/
+	    font-size: .8em;
+	}
+
+    table.dataGrid
+    {
+        background: black;
+        border-collapse: collapse;
+        width: 95%;
+    }
+
+    table.dataGrid th, table.dataGrid td
+    {
+        font-size: 0.9em;
+        border: 1px #999999 solid;
+        padding: 0.3em;
+    }
+
+    table.dataGrid th
+    {
+        background: back;
+        text-align: center;
+        color:#ffffff;
+    }
+    table.dataGrid th a
+    {
+        color:red;
+        text-decoration: underline;
+    }
+
+    table.dataGrid th.label
+    {
+        
+    }
+
+    table.dataGrid tr.odd
+    {
+        background: #000000;
+    }
+
+    table.dataGrid tr.even
+    {
+        background: #000000;
+    }
+
+    table.dataGrid td.actionCol, table.dataGrid th.actionCol 
+    {
+        display:none;
+    }
+    
+    table.dataGrid tr.filterRow
+    {
+        display: none;
+    }
+}

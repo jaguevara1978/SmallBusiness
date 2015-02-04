@@ -1,0 +1,15 @@
+[22-Aug-2014 21:03:07 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:04:11 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:04:42 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:05:02 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:05:05 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:05:09 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:05:17 America/New_York] PHP Parse error:  syntax error, unexpected '{' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 27
+[22-Aug-2014 21:05:53 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 28
+[22-Aug-2014 21:06:15 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 28
+[22-Aug-2014 21:08:24 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 29
+[23-Aug-2014 10:05:10 America/New_York] PHP Parse error:  syntax error, unexpected '<' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 34
+[23-Aug-2014 11:25:09 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 43
+[25-Aug-2014 21:06:25 America/New_York] PHP Fatal error:  Call to a member function totalProvider() on a non-object in /home/arkeasco/public_html/beerlink/protected/views/providerInvoice/_view.php on line 24
+[26-Aug-2014 23:14:54 America/New_York] PHP Fatal error:  Call to a member function totalProvider() on a non-object in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 29
+[26-Aug-2014 23:14:58 America/New_York] PHP Fatal error:  Call to a member function totalProvider() on a non-object in /home/arkeasco/public_html/beerlink/protected/views/clientInvoice/_view.php on line 29
